@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.footer__contact {
+    width: 250px;
+}
+
+.footer__title {
+    font-size: 20px;
+    margin-bottom: 29px;
+    color: #fff;
+}
+
+.footer__item-content p+p {
+    margin-top: 20px;
+}
