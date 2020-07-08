@@ -62,3 +62,216 @@
         font-weight: 500;
     }
 }
+
+// end header
+// start serch
+.search {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 533px;
+}
+
+.search__inner {
+    padding: 130px 0 100px;
+    color: #fff;
+    text-align: center;
+
+    &-title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 72px;
+        margin-bottom: 10px;
+    }
+
+    &-text {
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    &-form {
+        max-width: 670px;
+        margin: 0 auto;
+        position: relative;
+
+        input {
+            display: block;
+            width: 100%;
+            box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+            border-radius: 4px;
+            height: 56px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 25px;
+            padding-right: 50px;
+            // outline: none;
+            // &:focus {
+            //     border: 1px solid $green;
+            // }
+
+            &::placeholder {
+                color: #90a4ae;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            right: 23px;
+            top: 18px;
+        }
+    }
+
+}
+
+// end search
+// start products
+
+
+.products {
+    padding: 110px 0;
+    background-color: $grey;
+}
+
+.products__inner-btn {
+    text-align: center;
+    margin-bottom: 60px;
+
+
+    button {
+        border: none;
+        padding: 12px 21px;
+        background-color: #fff;
+        color: $bg;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+
+        &+button {
+            margin-left: 5px;
+        }
+
+        &.mixitup-control-active {
+            background-color: $red;
+            color: #fff;
+        }
+    }
+
+}
+
+.products__inner-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__item {
+    max-width: 442px;
+    width: 100%;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    margin-bottom: 30px;
+
+    &-img {
+        min-height: 250px;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        min-height: 90px;
+        align-items: center;
+        border-bottom: 1px solid #e7ecf2;
+    }
+
+    &-name {
+        max-width: 310px;
+    }
+
+    &-title {
+        color: $bg;
+        line-height: 20px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &-category {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        color: $green;
+    }
+
+    &-price {
+        font-size: 14px;
+        color: $bg;
+        font-weight: 700;
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        min-height: 70px;
+
+
+    }
+
+    &-autor {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .avatar {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 14px;
+        }
+
+
+    }
+
+
+
+
+}
+
+.products__bottom-btn {
+    margin-top: 45px;
+    text-align: center;
+
+    button {
+        margin: 0 5px;
+        box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+        border: none;
+        background-color: #fff;
+        color: $bg;
+        padding: 20px 30px;
+        cursor: pointer;
+
+        &.mixitup-control-active {
+            background-color: $red;
+            color: #fff;
+        }
+    }
+}
