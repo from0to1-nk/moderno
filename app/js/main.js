@@ -10,6 +10,32 @@ $(function () {
         arrows: false,
         slidesToScroll: 4,
         slidesToShow: 4,
+        responsive: [{
+                breakpoint: 1900,
+                settings: {
+                    slidesToScroll: 3,
+                    slidesToShow: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1441,
+                settings: {
+                    slidesToScroll: 2,
+                    slidesToShow: 2,
+
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+
+                }
+            },
+        ]
 
     });
 

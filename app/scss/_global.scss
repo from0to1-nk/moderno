@@ -5,6 +5,8 @@ html {
 html,
 body {
     height: 100%;
+    position: relative;
+    overflow-x: scroll;
 }
 
 *,
@@ -32,7 +34,7 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: $text;
-    overflow-x: hidden;
+
 }
 
 
@@ -90,6 +92,8 @@ body {
 .breadcrumbs {
     &__inner {
         padding: 45px 0 40px;
+        overflow: hidden;
+        width: 1200px;
     }
 
     &__list {
@@ -136,4 +140,8 @@ body {
         font-size: 14px;
 
     }
+}
+
+#modal {
+    display: none;
 }
